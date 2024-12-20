@@ -1,6 +1,6 @@
 <?php
 
-namespace valex\template\Http\Livewire;
+namespace frontend\template\Http\Livewire;
 
 use Livewire\Component;
 use Livewire\Attributes\Layout;

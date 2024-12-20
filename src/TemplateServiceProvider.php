@@ -1,5 +1,5 @@
 <?php
-namespace  valex\template;
+namespace  frontend\template;
 
 use Illuminate\Support\ServiceProvider;
 

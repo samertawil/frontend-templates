@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInitaa053a976f66457c0d5e5e2e2e9eb74b
 {
     public static $prefixLengthsPsr4 = array (
-        'l' => 
+        'L' => 
         array (
-            'laravel\\frontend-template\\' => 26,
+            'Laravel\\FrontendTemplates\\' => 26,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'laravel\\frontend-template\\' => 
+        'Laravel\\FrontendTemplates\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

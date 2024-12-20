@@ -1,7 +1,7 @@
 <?php
  
 use Illuminate\Support\Facades\Route;
-use valex\template\Http\Livewire\Test;
+use frontend\template\Http\Livewire\Test;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
  
 Route::group(

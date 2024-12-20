@@ -1,11 +1,11 @@
 {
-    "name": "valex/template",
+    "name": "laravel/frontend-templates",
     "description": "laravel v11 livewire 3.5",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "valex\\template\\": "src/"
+            "frontend\\template\\": "src/"
         }
     },
     "authors": [
