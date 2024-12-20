@@ -1,0 +1,26 @@
+{
+    "name": "valex/template",
+    "description": "laravel v11 livewire 3.5",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "valex\\template\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "samer tawil",
+            "email": "eng.samertawil@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2",
+        "livewire/livewire": "^3.5", 
+        "mcamara/laravel-localization": "^2.2"
+    }
+}
+
+
+ 
