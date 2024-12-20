@@ -36,6 +36,11 @@ class TemplateServiceProvider extends ServiceProvider
             'lang'
         );
 
+       $this->publishes(
+                [__DIR__ . '/../config/laravellocalization.php' => config_path('laravellocalization.php'),],
+                'config'
+            );
+
 
     //     $this->publishes([
     //         __DIR__.'/Http/Livewire' => app_path('Livewire'),
