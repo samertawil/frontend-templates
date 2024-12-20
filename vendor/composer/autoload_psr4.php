@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Laravel\\FrontendTemplates\\' => array($baseDir . '/src'),
+    'frontend\\template\\' => array($baseDir . '/src'),
 );

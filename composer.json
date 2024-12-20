@@ -1,5 +1,5 @@
 {
-    "name": "laravel/frontend-templates",
+    "name": "laravel-frontend/templates",
     "description": "laravel v11 livewire 3.5",
     "type": "library",
     "license": "MIT",
