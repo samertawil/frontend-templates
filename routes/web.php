@@ -1,7 +1,7 @@
 <?php
  
 use Illuminate\Support\Facades\Route;
-use frontend\template\Http\Livewire\Test;
+use frontend\template\Http\Livewire\Home;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
  
 Route::group(
@@ -11,7 +11,7 @@ Route::group(
   ], function(){
     
 
-    Route::get('test',Test::class);
+    Route::get('home',Home::class)->name('home');
 
     
   });

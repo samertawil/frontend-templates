@@ -5,14 +5,14 @@ namespace frontend\template\Http\Livewire;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 
-class Test extends Component
+class Home extends Component
 {
 
-    #[Layout('pack::components.layouts.metronic7-app')]
+    #[Layout('pack::components.layouts.metronic7-simple-app')]
     public function render()
     {
         
-        return view('pack::livewire.test');
+        return view('pack::livewire.home');
     }
 
  

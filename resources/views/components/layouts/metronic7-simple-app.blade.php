@@ -73,13 +73,13 @@
             <!--begin::Wrapper-->
             <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
                 <!--begin::Header-->
-                @include('pack::layouts.metronic7.header')
+                @include('pack::layouts.metronic7.header-simple')
                 <!--end::Header-->
 
                 <!--begin::Content-->
                 <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
                     <!--begin::Subheader-->
-                    @include('pack::layouts.metronic7.subheader')
+                    @include('pack::layouts.metronic7.subheader-simple')
 
                     <!--end::Subheader-->
 
@@ -88,7 +88,7 @@
                         <!--begin::Container-->
                         <div class=" container ">
                            {{$slot}}
-                      
+                        
                         </div>
                         <!--end::Container-->
                     </div>
@@ -1432,7 +1432,7 @@
             </svg><!--end::Svg Icon--></span>
     </div>
 
-    @include('pack::layouts.metronic7.sticky-pannel')
+    {{-- @include('pack::layouts.metronic7.sticky-pannel') --}}
 
     @include('pack::layouts.metronic7.footer-script')
 
