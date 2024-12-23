@@ -1,7 +1,9 @@
 <?php
  
+ 
 use Illuminate\Support\Facades\Route;
 use frontend\template\Http\Livewire\Home;
+use frontend\template\Http\Livewire\MissingPeopel;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
  
 Route::group(
@@ -13,6 +15,7 @@ Route::group(
 
     Route::get('home',Home::class)->name('home');
 
+    Route::get('missing-peopel',MissingPeopel::class)->name('missing.peopel');
     
   });
  

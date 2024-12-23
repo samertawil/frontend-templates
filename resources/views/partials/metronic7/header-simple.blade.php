@@ -599,7 +599,7 @@
 
 
              <!--begin::Languages-->
-             @include('pack::layouts.metronic7._lang-metronic-header')
+             @include('pack::partials.metronic7._lang-metronic-header')
              <!--end::Languages-->
 
              <!--begin::User-->

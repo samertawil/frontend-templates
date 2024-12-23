@@ -60,7 +60,14 @@
 },
 "font-family": "Poppins"
 };
+
+
 </script>
+
+ {{-- <script src="{{asset('template-assets/jquery.min.js')}}"></script> --}}
+
+
+ 
 <!--end::Global Config-->
 
 <!--begin::Global Theme Bundle(used by all pages)-->
@@ -79,4 +86,9 @@
 
 <!--end::Body-->
 
- 
+<script>
+    $('.reload').on('click', function() {
+       
+        location.reload();
+    })
+</script>
