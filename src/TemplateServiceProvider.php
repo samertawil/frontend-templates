@@ -43,7 +43,7 @@ class TemplateServiceProvider extends ServiceProvider
                 'config'
             );
 
-            $this->publishes([__DIR__.'/../routes/test.php'=>base_path('routes'),
+            $this->publishes([__DIR__.'/../routes/test.php'=>base_path('routes/test.php'),
             'routes']);
 
     

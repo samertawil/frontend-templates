@@ -23,3 +23,6 @@
 <link href="{{asset('template-assets/metronic7/css/themes/layout/brand/dark.css')}}" rel="stylesheet" type="text/css" />
 <link href="{{asset('template-assets/metronic7/css/themes/layout/aside/dark.css')}}" rel="stylesheet" type="text/css" /> 
 @endif
+
+
+    <link href="{{ asset('template-assets/main.css') }}" rel="stylesheet" type="text/css" />
