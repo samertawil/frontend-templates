@@ -1,6 +1,6 @@
 @props([
     'type' => '',
-    'name' => __('pack::front.save') ,
+    'name' => __('front.save') ,
     'divlclass'=>'',
     'iclass'=>'',
     '$iclassName'=>''

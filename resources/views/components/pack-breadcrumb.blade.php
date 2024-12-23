@@ -2,7 +2,7 @@
     'CurrentPageTitle' => '',
     'button' => '',
     'type' => '',
-    'label' => __('pack::front.save'),
+    'label' => __('front.save'),
     'divlclass' => '',
     'route' => null,
     'iclass' => '',

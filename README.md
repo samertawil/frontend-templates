@@ -12,7 +12,7 @@
       ]);
   })
 
-<!-- * Route::group(
+* Route::group(
   [
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
@@ -23,4 +23,6 @@
 
     
   });
-  -->
+ 
+
+ * #[Layout('components.layouts.metronic7-app')]

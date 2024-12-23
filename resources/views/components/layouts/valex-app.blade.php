@@ -8,7 +8,7 @@
     <meta name="Description" content="samer website with livewire">
 
 
-    @include('pack::partials.valex.head')
+    @include('partials.valex.head')
 
     @stack('css')
 
@@ -48,18 +48,18 @@
         <img src="{{ asset('template-assets/img/loader.svg') }}" class="loader-img" alt="Loader">
     </div>
 
-    @include('pack::partials.valex.main-sidebar')
+    @include('partials.valex.main-sidebar')
     {{ $slot ?? '' }}
 
 
-	@include('pack::partials.valex.main-header')			
+	@include('partials.valex.main-header')			
 
 	@yield('page-header')
 	@yield('content')
-    @include('pack::partials.valex.sidebar')
-    @include('pack::partials.valex.models')
-    @include('pack::partials.valex.footer')
-    @include('pack::partials.valex.footer-scripts')
+    @include('partials.valex.sidebar')
+    @include('partials.valex.models')
+    @include('partials.valex.footer')
+    @include('partials.valex.footer-scripts')
 
 </body>
 

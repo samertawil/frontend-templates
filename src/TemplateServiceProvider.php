@@ -15,11 +15,11 @@ class TemplateServiceProvider extends ServiceProvider
     public function boot(): void
     {
         
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        // $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
    
-         $this->loadViewsFrom(__DIR__ . '/../resources/views','pack');
+        //  $this->loadViewsFrom(__DIR__ . '/../resources/views','pack');
 
-         $this->loadTranslationsFrom(__DIR__ .'/../lang','pack');
+        //  $this->loadTranslationsFrom(__DIR__ .'/../lang','pack');
  
          $this->publishes([ __DIR__.'/../template-assets' => public_path('template-assets'),
             
@@ -43,19 +43,8 @@ class TemplateServiceProvider extends ServiceProvider
                 'config'
             );
 
-
-    //     $this->publishes([
-    //         __DIR__.'/Http/Livewire' => app_path('Livewire'),
-    //     ]);
-
-    //     $this->publishes([
-    //         __DIR__.'/Http/Middleware' => app_path('/Http/Middleware'),
-    //     ]);
-
-
-
-
-
+            $this->publishes([__DIR__.'/../routes/test.php'=>base_path('routes'),
+            'routes']);
 
     
      }

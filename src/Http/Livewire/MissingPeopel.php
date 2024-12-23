@@ -13,12 +13,12 @@ class MissingPeopel extends Component
     }
 
     
-    #[Layout('pack::components.layouts.metronic7-app')]
+    #[Layout('components.layouts.metronic7-simple-app')]
     public function render()
     {
         
         $title='samer1'; 
       
-        return view('pack::livewire.missing-peopel')->layoutData(['title'=>'samer']);
+        return view('livewire.missing-peopel')->layoutData(['title'=>'samer']);
     }
 }

@@ -1032,7 +1032,7 @@
              <!--end::Chat-->
 
              <!--begin::Languages-->
-             @include('pack::partials.metronic7._lang-metronic-header')
+             @include('partials.metronic7._lang-metronic-header')
              <!--end::Languages-->
 
              <!--begin::User-->

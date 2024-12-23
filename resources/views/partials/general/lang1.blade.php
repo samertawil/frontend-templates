@@ -10,9 +10,9 @@ $current = LaravelLocalization::getCurrentLocale();
         <a rel="alternate" hreflang="ar"
             href="{{ LaravelLocalization::getLocalizedURL('ar', null, [], true) }}">
             <span style="font-size: 12px;">{{ ' العربية ' }} </span> </a> <small
-            style="font-size: 12px;">{{ __('pack::pack.langName') }}</small>
+            style="font-size: 12px;">{{ __('pack.langName') }}</small>
     @else
-        <small style="font-size: 12px;">{{ __('pack::pack.langName') }}</small>
+        <small style="font-size: 12px;">{{ __('pack.langName') }}</small>
 
         <a rel="alternate" hreflang="en"
             href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}">

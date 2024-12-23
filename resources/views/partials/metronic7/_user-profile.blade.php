@@ -49,7 +49,7 @@
                     </a>
 
                     <a href="#" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">
-                     {{__('pack::front.sign out')}}
+                     {{__('front.sign out')}}
                         </a>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         <div class="separator separator-dashed mt-8 mb-5"></div>
 
 
-        @include('pack::partials.metronic7._user-profile-tools')
+        @include('partials.metronic7._user-profile-tools')
 
 
     </div>

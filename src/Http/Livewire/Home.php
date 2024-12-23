@@ -8,11 +8,11 @@ use Livewire\Attributes\Layout;
 class Home extends Component
 {
 
-    #[Layout('pack::components.layouts.metronic7-simple-app')]
+    #[Layout('components.layouts.metronic7-simple-app')]
     public function render()
     {
         
-        return view('pack::livewire.home');
+        return view('livewire.home');
     }
 
  

@@ -8,7 +8,7 @@
     <meta name="description" content="Page with empty content" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    @include('pack::partials.metronic7.head')
+    @include('partials.metronic7.head')
 
 
 </head>
@@ -68,16 +68,16 @@
         <div class="d-flex flex-row flex-column-fluid page">
 
  
-            @include('pack::partials.metronic7.aside')
+            @include('partials.metronic7.aside')
  
 
     
             <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
            
-                @include('pack::partials.metronic7.header')
+                @include('partials.metronic7.header')
  
              
-                @include('pack::partials.metronic7.subheader')
+                @include('partials.metronic7.subheader')
            
                 <div class="d-flex flex-column-fluid my-5 " >
 
@@ -116,7 +116,7 @@
                 </div>
 
               
-                @include('pack::partials.metronic7.footer')
+                @include('partials.metronic7.footer')
        
             </div>
           
@@ -130,7 +130,7 @@
 
 
     <!-- begin::User Panel-->
-    @include('pack::partials.metronic7._user-profile')
+    @include('partials.metronic7._user-profile')
     <!-- end::User Panel-->
 
 
@@ -1111,9 +1111,9 @@
             </svg><!--end::Svg Icon--></span>
     </div>
 
-    @include('pack::partials.metronic7.sticky-pannel')
+    @include('partials.metronic7.sticky-pannel')
 
-    @include('pack::partials.metronic7.footer-script')
+    @include('partials.metronic7.footer-script')
 
 </body>
 

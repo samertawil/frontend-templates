@@ -8,7 +8,7 @@
     <meta name="description" content="Page with empty content" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    @include('pack::partials.metronic7.head')
+    @include('partials.metronic7.head')
 
 
     <link href="{{ asset('template-assets/main.css') }}" rel="stylesheet" type="text/css" />
@@ -69,19 +69,19 @@
         <div class="d-flex flex-row flex-column-fluid page">
 
             <!--begin::Aside-->
-            @include('pack::partials.metronic7.aside')
+            @include('partials.metronic7.aside')
             <!--end::Aside-->
 
             <!--begin::Wrapper-->
             <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
                 <!--begin::Header-->
-                @include('pack::partials.metronic7.header-simple')
+                @include('partials.metronic7.header-simple')
 
                 {{-- 
                 <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
                   
 
-                    @include('pack::partials.metronic7.subheader-simple')
+                    @include('partials.metronic7.subheader-simple')
 
              
                 </div> --}}
@@ -135,7 +135,7 @@
 
 
 
-                @include('pack::partials.metronic7.footer')
+                @include('partials.metronic7.footer')
                 <!--end::Footer-->
             </div>
             <!--end::Wrapper-->
@@ -149,7 +149,7 @@
 
 
     <!-- begin::User Panel-->
-    @include('pack::partials.metronic7._user-profile')
+    @include('partials.metronic7._user-profile')
     <!-- end::User Panel-->
 
 
@@ -1130,9 +1130,9 @@
             </svg><!--end::Svg Icon--></span>
     </div>
 
-    {{-- @include('pack::partials.metronic7.sticky-pannel') --}}
+    {{-- @include('partials.metronic7.sticky-pannel') --}}
 
-    @include('pack::partials.metronic7.footer-script')
+    @include('partials.metronic7.footer-script')
 
  
 </body>
