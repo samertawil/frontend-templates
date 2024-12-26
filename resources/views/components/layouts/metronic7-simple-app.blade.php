@@ -11,7 +11,7 @@
     @include('partials.metronic7.head')
 
 
-    <link href="{{ asset('template-assets/main.css') }}" rel="stylesheet" type="text/css" />
+  
 </head>
 
 
