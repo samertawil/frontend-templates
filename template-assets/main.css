@@ -29,14 +29,14 @@ body {
 
 td,
 th {
-    text-align: right !important;
+    /* text-align: right !important; */
     vertical-align: middle !important;
 
 }
 
- table th {
+ /* table th {
     text-align: center  !important;
-}
+} */
 
 .sortable th, .pointer{
     cursor: pointer;

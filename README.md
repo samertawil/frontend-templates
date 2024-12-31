@@ -11,7 +11,10 @@
           'localeViewPath'          => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class,
       ]);
   })
-
+  
+ * php artisan make:livewire Test  // for test
+ 
+ 
 * Route::group(
   [
     'prefix' => LaravelLocalization::setLocale(),
@@ -26,3 +29,9 @@
  
 
  * #[Layout('components.layouts.metronic7-app')]
+ 
+ * php artisan livewire:publish --config
+ 
+* Route::post('/logout',function() {
+    return 'code is here';
+})->name('logout');

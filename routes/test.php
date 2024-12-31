@@ -19,6 +19,9 @@ Route::group(
     
   });
  
+Route::post('/logout',function() {
+    return 'code is here';
+})->name('logout');
 
  
 //  Route::view('sb','components.layouts.SB-Admin-app-black');
