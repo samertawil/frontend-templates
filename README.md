@@ -45,6 +45,8 @@ You can install the package via composer:
 <pre><span>Route::post('/logout',function() {
     return 'code is here';
 })->name('logout');</span></pre>
+
+## Overwrite layout path  from config.livewire  
 <pre><span>#[Layout('components.layouts.metronic7-simple-app')]</span></pre>
  
 

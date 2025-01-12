@@ -20,7 +20,8 @@ class TemplateServiceProvider extends ServiceProvider
         //  $this->loadViewsFrom(__DIR__ . '/../resources/views','pack');
 
         //  $this->loadTranslationsFrom(__DIR__ .'/../lang','pack');
- 
+
+         
          $this->publishes([ __DIR__.'/../template-assets' => public_path('template-assets'),
             
              ],'assets');
@@ -47,7 +48,10 @@ class TemplateServiceProvider extends ServiceProvider
             'routes']);
 
     
+       
+
      }
+ 
 
 
     }
