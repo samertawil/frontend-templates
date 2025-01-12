@@ -1,6 +1,6 @@
 {
     "name": "laravel-frontend/templates",
-    "description": "laravel v11 livewire 3.5",
+    "description": "The library base on PHP Laravel framework, contains 3 Responsive_Admin_Dashboard_Template to make building the website or application easier ",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -21,6 +21,3 @@
         "mcamara/laravel-localization": "^2.2"
     }
 }
-
-
- 
