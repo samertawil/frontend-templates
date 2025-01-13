@@ -10,7 +10,7 @@
 
     @include('partials.metronic7.head')
 
-
+    @stack('css')
 </head>
 
 
@@ -1115,6 +1115,7 @@
 
     @include('partials.metronic7.footer-script')
 
+    @stack('js')
 </body>
 
 

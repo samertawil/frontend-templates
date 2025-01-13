@@ -16,6 +16,8 @@
     @endif
 
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
+
+    @stack('css')
 </head>
 
 <body>
@@ -238,6 +240,7 @@
     </script>
     <script src="{{ asset('template-assets/sb-admin/js/scripts.js') }}"></script>
 
+    @stack('js')
 
 </body>
 
