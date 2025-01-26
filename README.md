@@ -58,10 +58,23 @@ You can install the package via composer:
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
   ], function(){
     
-	// Route is here
+ Livewire::setUpdateRoute(function ($handle) {
+            return Route::post('/livewire/update', $handle);
+        });
+    
+        Route::post('/logout', function () {
+            return 'code is here';
+        })->name('logout');
+
+        Route::get('test', Test::class);
     
   });</span></pre>
  
+ 
+ 
+ 
+       
+
 
 
  

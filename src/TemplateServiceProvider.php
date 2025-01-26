@@ -26,11 +26,20 @@ class TemplateServiceProvider extends ServiceProvider
             
              ],'assets');
 		
- 
+             $this->publishes([ __DIR__.'/../website-assets' => public_path('website-assets'),
+            
+            ],'assets');
+       
 
         $this->publishes(
             [__DIR__ . '/../resources/views' => resource_path('views'),],
             'views'
+        );
+
+        
+        $this->publishes(
+            [__DIR__ . '/Http/' => app_path(''),],
+            'app'
         );
 
 
@@ -47,8 +56,15 @@ class TemplateServiceProvider extends ServiceProvider
             $this->publishes([__DIR__.'/../routes/test.php'=>base_path('routes/test.php'),
             'routes']);
 
-    
-       
+            $this->publishes(
+                [__DIR__ . '/../database/migrations' => database_path('migrations'),],
+            'database'
+               );
+                
+               $this->publishes(
+                [__DIR__ . '/../routes/front.php' => base_path('routes/front.php'),],
+                'routes'
+            );
 
      }
  
