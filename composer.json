@@ -18,6 +18,7 @@
     "require": {
         "php": "^8.2",
         "livewire/livewire": "^3.5",
-        "mcamara/laravel-localization": "^2.2"
+        "mcamara/laravel-localization": "^2.2",
+        "spatie/livewire-filepond": "^1.4"
     }
 }

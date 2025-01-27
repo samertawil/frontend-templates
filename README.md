@@ -10,7 +10,8 @@ development by "samer tawil"  eng.samertawil@gmail.com
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",
-        "mcamara/laravel-localization": "^2.2"
+        "mcamara/laravel-localization": "^2.2",
+         "spatie/livewire-filepond": "^1.4"
     },</span></pre>
  
  
@@ -52,13 +53,24 @@ You can install the package via composer:
 
 
 ## Route with LaravelLocalization
-<pre><span>Route::group(
-  [
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-  ], function(){
+<pre><span>
+ <?php
+ 
+use Livewire\Livewire;
+use App\Livewire\Website\Index;
+use Illuminate\Support\Facades\Route;
+use App\Livewire\Dashboard\Cards\Create;
+use App\Livewire\Dashboard\Cards\Resource;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ],
     
- Livewire::setUpdateRoute(function ($handle) {
+    function () {
+        Livewire::setUpdateRoute(function ($handle) {
             return Route::post('/livewire/update', $handle);
         });
     
@@ -66,10 +78,32 @@ You can install the package via composer:
             return 'code is here';
         })->name('logout');
 
-        Route::get('test', Test::class);
-    
-  });</span></pre>
+        Route::post('/home', function () {
+            return 'code is here';
+        })->name('home');
+
+            
+        Route::get('dashboard/cards/create', Create::class);
+
+        Route::get('dashboard/cards/resource', Resource::class);
  
+        Route::get('/', Index::class);
+    }
+);
+</span></pre>
+ 
+ ## Public disk storage
+      <pre><span>'website' => [
+            'driver' => 'local',
+            'root' => storage_path('app/website'),
+            'visibility' => 'public',
+            'url' => env('APP_URL').'/website',
+            'serve' => true,
+            'throw' => false,
+        ],</span></pre>
+		
+##	php artisan storage:link
+
  
  
  
