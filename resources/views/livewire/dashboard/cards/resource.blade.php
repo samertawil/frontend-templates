@@ -129,7 +129,7 @@
                                         <x-filepond::upload wire:model="file" name="file" required='true'
                                             allowFileSizeValidation maxFileSize='1024KB'
                                             class="@error('file') is-invalid   @enderror" />
-                                        @include('layouts._show-error', ['field_name' => 'file'])
+                                            @include('partials.general._show-error',['field_name'=>'file'])
 
                                   
 

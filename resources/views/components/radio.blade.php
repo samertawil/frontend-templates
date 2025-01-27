@@ -35,9 +35,7 @@
 
 
             <label for={{ $value1 }} class="form-label fw-normal mr-4">{{  __("customTrans.$value_title1")  }}</label>
-            @include('layouts._show-error', [
-                'field_name' => $name,
-            ])
+            @include('partials.general._show-error',['field_name'=>$name])
         </div>
         <div class="mx-4">
             

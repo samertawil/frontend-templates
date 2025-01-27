@@ -44,6 +44,6 @@
          {{ $attributes->class(['form-control', 'is-invalid' => $errors->has($name)]) }}>{{ old($name) }}</textarea>
              
 
-     @include('layouts._show-error', ['field_name' => $name])
+         @include('partials.general._show-error',['field_name'=>$name
 
  </div>
