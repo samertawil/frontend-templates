@@ -70,6 +70,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
  
 
  
+ 
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -96,11 +97,14 @@ Route::group(
         Route::get('dashboard/cards/create', Create::class);
 
         Route::get('dashboard/cards/resource', Resource::class)->name('website.card.resource');
+		
+	    Route::get('test',Test::class);
  
  
         
     }
 );
+
 
 </span></pre>
  

@@ -13,10 +13,10 @@ return new class extends Migration
             $table->id();
             $table->string('card_title');
             $table->string('card_text');
-            $table->json('card_img')->nullable();
+            $table->json('card_image')->nullable();
             $table->enum('active', [0, 1])->default(1);
             $table->string('card_url')->nullable(1);
-            $table->foreignId('status_id')->nullable()->constrained('statuses');
+            $table->foreignId('status_id');
             $table->foreignId('user_id')->nullable()->constrained('users');
             $table->softDeletes();
             $table->timestamps();

@@ -50,7 +50,7 @@
             @endforeach
         </select>
         <small class="text-muted">{{$description_field}}</small>
-        @include('partials.general._show-error',['field_name'=>$name
+        @include('partials.general._show-error',['field_name'=>$name])
     </div>
   
 </div>
