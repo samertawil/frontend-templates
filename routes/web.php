@@ -1,29 +1,45 @@
 <?php
  
- 
+
+use Livewire\Livewire;
+use App\Livewire\Dashboard;
+use App\Livewire\Website\Index;
 use Illuminate\Support\Facades\Route;
-use frontend\template\Http\Livewire\Home;
-use frontend\template\Http\Livewire\MissingPeopel;
+use App\Livewire\Dashboard\Cards\Create;
+use App\Livewire\Dashboard\Cards\Resource;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
+ 
+
  
 Route::group(
-  [
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-  ], function(){
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ],
     
-
-    Route::get('home',Home::class)->name('home');
-
-    Route::get('missing-peopel',MissingPeopel::class)->name('missing.peopel');
+    function () {
+        Livewire::setUpdateRoute(function ($handle) {
+            return Route::post('/livewire/update', $handle);
+        });
     
-  });
- 
-Route::post('/logout',function() {
-    return 'code is here';
-})->name('logout');
+        Route::post('/logout', function () {
+            return 'code is here';
+        })->name('logout');
 
+        Route::post('/home', function () {
+            return 'code is here';
+        })->name('home');
+
+        Route::get('dashboard', Dashboard::class)->name('dashboard.home')->middleware('auth');
+
+        Route::get('/', Index::class);
+
+        Route::get('dashboard/cards/create', Create::class);
+
+        Route::get('dashboard/cards/resource', Resource::class)->name('website.card.resource');
  
-//  Route::view('sb','components.layouts.SB-Admin-app-black');
  
- 
+        
+    }
+);

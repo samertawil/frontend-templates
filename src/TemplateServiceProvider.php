@@ -56,6 +56,9 @@ class TemplateServiceProvider extends ServiceProvider
             $this->publishes([__DIR__.'/../routes/test.php'=>base_path('routes/test.php'),
             'routes']);
 
+            $this->publishes([__DIR__.'/../routes/web.php'=>base_path('routes/web.php'),
+            'web-routes']);
+
             $this->publishes(
                 [__DIR__ . '/../database/migrations' => database_path('migrations'),],
             'database'

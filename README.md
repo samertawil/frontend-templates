@@ -26,6 +26,7 @@ You can install the package via composer:
  
 ## publish
 <pre><span>php artisan vendor:publish --provider="frontend\template\TemplateServiceProvider"</span></pre>
+<pre><span>php artisan vendor:publish --provider="frontend\template\TemplateServiceProvider" --tag=web-route --force</span></pre>
 <pre><span>php artisan livewire:publish --config</span></pre>
 
 
@@ -42,27 +43,33 @@ You can install the package via composer:
   
 ## Test
 <pre><span>php artisan make:livewire Test</span></pre>
-<pre><span>Route::get('test',Test::class);</span></pre>
-<pre><span>Route::post('/logout',function() {
-    return 'code is here';
-})->name('logout');</span></pre>
+
 
 ## Overwrite layout path  from config.livewire  
 <pre><span>#[Layout('components.layouts.metronic7-simple-app')]</span></pre>
+
+##  layout path for website 
+<pre><span>#[Layout('website-master')]</span></pre>
  
 
 
 ## Route with LaravelLocalization
 <pre><span>
  <?php
+ <?php
  
+
 use Livewire\Livewire;
+use App\Livewire\Dashboard;
 use App\Livewire\Website\Index;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Dashboard\Cards\Create;
 use App\Livewire\Dashboard\Cards\Resource;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
+ 
+
+ 
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -82,25 +89,32 @@ Route::group(
             return 'code is here';
         })->name('home');
 
-            
+        Route::get('dashboard', Dashboard::class)->name('dashboard.home')->middleware('auth');
+
+        Route::get('/', Index::class);
+
         Route::get('dashboard/cards/create', Create::class);
 
-        Route::get('dashboard/cards/resource', Resource::class);
+        Route::get('dashboard/cards/resource', Resource::class)->name('website.card.resource');
  
-        Route::get('/', Index::class);
+ 
+        
     }
 );
+
 </span></pre>
  
  ## Public disk storage
-      <pre><span>'website' => [
+<pre><span>
+       'website' => [
             'driver' => 'local',
             'root' => storage_path('app/website'),
             'visibility' => 'public',
             'url' => env('APP_URL').'/website',
             'serve' => true,
             'throw' => false,
-        ],</span></pre>
+        ], 
+</span></pre>
 		
 ##	php artisan storage:link
 
